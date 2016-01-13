@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ElefantStudio_Dev" Class="vPlanLinqSQLDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=sgh45lkuac.database.windows.net;Initial Catalog=ElefantStudio_Dev;Persist Security Info=True;User ID=elefantdev" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ElefantStudio_DevConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailAdress" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Salt" Type="System.Data.Linq.Binary" DbType="VarBinary(250) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="Password" Type="System.Data.Linq.Binary" DbType="Binary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="LastOn" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="createdOn" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="employProcent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="employForm" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="arbetsplats_id" AutoSync="Always" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="User_Arbetsplat" Member="Arbetsplats" ThisKey="arbetsplats_id" OtherKey="Id" Type="Arbetsplat" />
+      <Association Name="User_Arbetsplat1" Member="Arbetsplats1" ThisKey="Id" OtherKey="personal_id" Type="Arbetsplat" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Organisation" Member="Organisations">
+    <Type Name="Organisation">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Namn" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Ansvarig" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Telefonummer" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="arbetsplatser_id" AutoSync="Always" Type="System.Guid" CanBeNull="false" />
+      <Association Name="Arbetsplat_Organisation" Member="Arbetsplat" ThisKey="arbetsplatser_id" OtherKey="Id" Type="Arbetsplat" IsForeignKey="true" />
+      <Association Name="Arbetsplat_Organisation1" Member="Arbetsplat1" ThisKey="Id" OtherKey="organisation_id" Type="Arbetsplat" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Arbetsplats" Member="Arbetsplats">
+    <Type Name="Arbetsplat">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Namn" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Ansvarig" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Adress" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Postnummer" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Stad" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Telefonummer" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Direktnummer" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="organisation_id" AutoSync="Always" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Member="personal_id" AutoSync="Always" Type="System.Guid" CanBeNull="true" />
+      <Association Name="Arbetsplat_Organisation" Member="Organisations" ThisKey="Id" OtherKey="arbetsplatser_id" Type="Organisation" />
+      <Association Name="Arbetsplat_Organisation1" Member="Organisations1" ThisKey="organisation_id" OtherKey="Id" Type="Organisation" />
+      <Association Name="User_Arbetsplat" Member="User" ThisKey="Id" OtherKey="arbetsplats_id" Type="User" IsForeignKey="true" />
+      <Association Name="User_Arbetsplat1" Member="User1" ThisKey="personal_id" OtherKey="Id" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

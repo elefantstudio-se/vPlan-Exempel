@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.25" name="vPlanLinqSQL">
+  <DataContextMoniker Name="/vPlanLinqSQLDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8909ee3c-c16f-46a5-87ff-a8fb6bab5e05" absoluteBounds="3.5, 5.5, 4.375, 3.3093082682291666">
+      <DataClassMoniker Name="/vPlanLinqSQLDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a460ddf4-da03-4639-8547-94213b701db2" absoluteBounds="3.5149999999999997, 5.96, 4.3450000000000006, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="47307763-770f-4efb-b904-55e512ba3906" absoluteBounds="3.375, 0.5, 6.5, 1.7708968098958331">
+      <DataClassMoniker Name="/vPlanLinqSQLDataContext/Organisation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dca8d959-2835-46f5-aa62-615eb5209c49" absoluteBounds="3.39, 0.96, 6.4700000000000006, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8445b494-2441-494e-8e05-eb4d444b9b5e" absoluteBounds="3.5, 2.625, 2.875, 2.7324039713541666">
+      <DataClassMoniker Name="/vPlanLinqSQLDataContext/Arbetsplat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cde3d1b3-cff8-4a8d-8e9c-fdd898d651c6" absoluteBounds="3.515, 3.085, 2.8449999999999998, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.5 : 3.47460569071328); (3 : 3.47460569071328); (3 : 2.09544738200311); (3.375 : 2.09544738200311)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/vPlanLinqSQLDataContext/Arbetsplat/Arbetsplat_Organisation" />
+      <nodes>
+        <classShapeMoniker Id="8445b494-2441-494e-8e05-eb4d444b9b5e" />
+        <classShapeMoniker Id="47307763-770f-4efb-b904-55e512ba3906" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 4.25193932335656); (2.75 : 4.25193932335656); (2.75 : 1.32028757152576); (3.375 : 1.32028757152576)]" manuallyRouted="true" fixedFrom="Caller" fixedTo="Algorithm">
+      <AssociationMoniker Name="/vPlanLinqSQLDataContext/Arbetsplat/Arbetsplat_Organisation1" />
+      <nodes>
+        <classShapeMoniker Id="8445b494-2441-494e-8e05-eb4d444b9b5e" />
+        <classShapeMoniker Id="47307763-770f-4efb-b904-55e512ba3906" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 8.68940235920783); (2.43333364864189 : 8.68940235920783); (2.43333364864189 : 3.44297399959654); (2.66666666666667 : 3.44297399959654 : JumpStart); (2.83333333333333 : 3.44297399959654 : JumpEnd); (3.5 : 3.44297399959654)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Caller">
+      <AssociationMoniker Name="/vPlanLinqSQLDataContext/User/User_Arbetsplat" />
+      <nodes>
+        <classShapeMoniker Id="8909ee3c-c16f-46a5-87ff-a8fb6bab5e05" />
+        <classShapeMoniker Id="8445b494-2441-494e-8e05-eb4d444b9b5e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 6.24963220544763); (3.125 : 6.24963220544763); (3.125 : 5.17293073381696); (3.5 : 5.17293073381696)]" fixedFrom="Caller" fixedTo="Caller">
+      <AssociationMoniker Name="/vPlanLinqSQLDataContext/User/User_Arbetsplat1" />
+      <nodes>
+        <classShapeMoniker Id="8909ee3c-c16f-46a5-87ff-a8fb6bab5e05" />
+        <classShapeMoniker Id="8445b494-2441-494e-8e05-eb4d444b9b5e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

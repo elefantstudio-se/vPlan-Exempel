@@ -1,0 +1,5 @@
+E:\OneDrive\ElefantStudio\Git\vPlan\vPlan\vPlan\vPlanLib\bin\Debug\vPlanLib.dll
+E:\OneDrive\ElefantStudio\Git\vPlan\vPlan\vPlan\vPlanLib\bin\Debug\vPlanLib.pdb
+E:\OneDrive\ElefantStudio\Git\vPlan\vPlan\vPlan\vPlanLib\obj\Debug\vPlanLib.csprojResolveAssemblyReference.cache
+E:\OneDrive\ElefantStudio\Git\vPlan\vPlan\vPlan\vPlanLib\obj\Debug\vPlanLib.dll
+E:\OneDrive\ElefantStudio\Git\vPlan\vPlan\vPlan\vPlanLib\obj\Debug\vPlanLib.pdb

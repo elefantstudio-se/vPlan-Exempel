@@ -1,0 +1,2 @@
+E:\OneDrive\ElefantStudio\Git\vPlan\vPlan\vPlan\vPlan\vPlan.csproj;x86
+E:\OneDrive\ElefantStudio\Git\vPlan\vPlan\vPlan\vPlanLib\vPlanLib.csproj;neutral

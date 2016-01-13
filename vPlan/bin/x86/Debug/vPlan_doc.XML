@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>vPlan</name>
+    </assembly>
+    <members>
+        <member name="T:vPlan.App">
+            Documentation on APIs used in this page:
+            https://github.com/Windows-XAML/Template10/wiki
+        </member>
+        <member name="M:vPlan.App.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.App.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:vPlan.App.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:vPlan.App.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+        <member name="T:vPlan.Models.Message">
+            <summary>
+            File: Message.cs
+            Meddelande hantering, ska utvecklas mer... 
+            </summary>
+        </member>
+        <member name="P:vPlan.Models.User.UserModel.Organisation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:vPlan.Models.User.UserModel.Arbetsplats">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:vPlan.Services.MessageService.MessageService">
+            <summary>
+            Test data för meddelande hantering och visning.
+            </summary>
+            <summary>
+            File: MessageService.cs
+            </summary>
+        </member>
+        <member name="M:vPlan.Services.MessageService.MessageService.GetMessages">
+             <summary>
+            Hämta meddelande
+             </summary>
+        </member>
+        <member name="M:vPlan.Services.MessageService.MessageService.Search(System.String)">
+            <summary>
+            Sök funktion , meddelande.
+            </summary>
+        </member>
+        <member name="M:vPlan.Services.MessageService.MessageService.DeleteMessage(vPlan.Models.Message)">
+            <summary>
+            Tabort meddelande
+            </summary>
+        </member>
+        <member name="M:vPlan.Services.MessageService.MessageService.GetMessage(System.String)">
+            <summary>
+            Hämta meddelande, id... 
+            </summary>
+        </member>
+        <member name="T:vPlan.ViewModels.MessagesPageViewModel">
+            <summary>
+            Class för att hantera meddelanden till Messages.XAML i VIEWS.
+            Att implentera, hantera så att den hämta Meddelande till den som är inloggad.
+            </summary>
+        </member>
+        <member name="T:vPlan.ViewModels.KalenderPageViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:vPlan.ViewModels.MyPageViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.KalenderPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.KalenderPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.MyPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.MyPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.MessagesPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.MessagesPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.DetailPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.DetailPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.MainPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.MainPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.SettingsPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.SettingsPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.Shell.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.Shell.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.Splash.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:vPlan.Views.Splash.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:vPlan.vPModels.TileInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:vPlan.Program">
+            <summary>
+            Program class
+            </summary>
+        </member>
+    </members>
+</doc>
